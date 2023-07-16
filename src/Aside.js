@@ -9,7 +9,7 @@ export default function Aside() {
       <nav className="aside__nav">
         <ul className="aside__nav-list">
           <li>
-            <NavLink to="/">
+            <NavLink to="about">
               <HiClipboard />
             </NavLink>
           </li>

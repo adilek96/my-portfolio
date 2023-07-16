@@ -363,11 +363,16 @@ template {
 html,
 body {
   height: 100%;
-  background: url("../public/img/bg.avif") center 0/100% 100% no-repeat;
-  /* background-color: #666; */
-  color: #fff;
+  background: url("../public/img/bg.avif") center 0/100% 100% no-repeat; 
+  background-color: #666;
+  
+  
+  color: white;
   font-family: 'Montserrat Alternates', sans-serif;
 
+}
+a {
+  color: #800080;
 }
 
 .wrapper {
@@ -455,6 +460,9 @@ li:hover {
   padding: 5px 0;
 }
 
+
+
+
 /* =========================================================== */
 
 .content__home {
@@ -466,26 +474,18 @@ li:hover {
   gap: 30px;
   align-items: center;
 }
-.content__skills {
+
+.content__edu, .content__skills, .content__portfolio, .content__contact {
   width: 70vw;
-  height: 60vh;
-  /* background-color: rgb(62, 171, 64); */
+  height: 70vh;
+  
 }
-.content__edu{
-  width: 70vw;
-  height: 60vh;
-  /* background-color: rgb(179, 66, 37); */
+.content__about {
+  width: 75vw;
+  height: 80vh;
 }
-.content__portfolio {
-  width: 70vw;
-  height: 60vh;
-  background-color: rgb(30, 11, 234);
-}
-.content__contact {
-  width: 70vw;
-  height: 60vh;
-  /* background-color: rgb(162, 46, 201); */
-}
+
+
 
 .active {
   color:#fff
@@ -509,10 +509,13 @@ h2 {
 .content__home-text  span,
 .content__skills h2,
 .content__edu h2,
+.content__about h2,
 .content__contact  h2 {
   font-size: 3rem;
-  background-color: #2AA5A0; 
-  background-image: linear-gradient(90deg, #E3535D, #2AA5A0); 
+  /* background-color: #FF3CAC;
+  background-image: linear-gradient(180deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+  background-color: #FEE140;
+  background-image: linear-gradient(120deg, #FEE140 9%, #FA709A 50%, #68c13f 87%);
   background-clip: text;
   color: transparent; 
   text-shadow: 2px 2px 4px rgba(190, 127, 127, 0.2);
@@ -533,10 +536,27 @@ h2 {
   width: 40vw;
   color: #800080;
 }
+.content__contact li p {
+  font-size: 1rem;
+  font-weight: 700;
+  
+}
+.content__skills-list  {
+  display: flex; 
+  font-size: 3rem;
+}
+.content__skills-list li  {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 3px;
+  
+}
+
 
 /* ============================================================================ */
 
-.content__edu h2 {
+.content__edu h2, .content__about{
   text-align: center;
 }
 .content__contact  h2 {
@@ -557,4 +577,13 @@ h2 {
   padding: 3px;
   font-size: 3rem;
 }
-
+.content__about p {
+  
+  color: #800080;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 400;
+}
+.content__about p:last-child {
+  font-size: 1.2rem;
+}
