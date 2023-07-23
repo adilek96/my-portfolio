@@ -627,19 +627,15 @@ body {
   height: fit-content;
 
 }
-.header {
-  display: none;
-}
+
 .main {
   min-height: calc(100vh - 50px);
   width: fit-content;
 
 }
-.aside {
-  display: none;
-}
+
 .content {
-  width: 100vw;
+  width: 80vw;
   height: 85vh ;
  
   /* background-color: darkgray; */
@@ -771,16 +767,5 @@ h2 {
   font-size: 1rem;
 }
 
-.footer {
-  display: block;
-}
-.footer__nav a {
-  color: darkmagenta;
-}
-.footer__nav-list {
-  display: flex;
-  justify-content: space-around;
-  font-size: 3rem;
-}
 }
 
