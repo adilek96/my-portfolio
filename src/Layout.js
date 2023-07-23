@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header";
 import Aside from "./Aside";
 import Content from "./Content";
+import Footer from "./Footer";
 
 export default function Layout() {
   return (
@@ -12,6 +13,7 @@ export default function Layout() {
         <Aside />
         {<Content />}
       </main>
+      <Footer />
     </div>
   );
 }
