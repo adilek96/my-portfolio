@@ -363,9 +363,9 @@ template {
 html,
 body {
   height: 100%;
-  background: url("../public/img/bg.avif") center 0/100% 100% no-repeat; 
-  background-color: #666;
-  color: white;
+  /* background: url("../public/img/bg.avif") center 0/100% 100% no-repeat;  */
+  background-color: whitesmoke;
+  color: black; 
   font-family: 'Montserrat Alternates', sans-serif;
 }
 a {
@@ -466,7 +466,7 @@ li:hover {
   height: 90vh;
 }
 .active {
-  color:#fff
+  color:black;
 }
 /* =================================================================== */
 .content__home-text {
@@ -610,10 +610,7 @@ body {
   width: 75vw;
   height: 80vh;
 }
-/* ============================================ */
-.active {
-  color:#fff
-}
+
 /* =================================================================== */
 .content__home-text {
   /* background-color: antiquewhite; */
