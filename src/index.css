@@ -459,7 +459,10 @@ li:hover {
 }
 .content__edu, .content__skills, .content__portfolio, .content__contact {
   width: 70vw;
-  height: 80vh;
+  height: 85vh;
+}
+.content__edu{
+  height: 95vh;
 }
 .content__about {
   width: 75vw;
@@ -561,6 +564,10 @@ h2 {
 }
 .footer {
   display: none;
+}
+.edu_wrapper-content img{
+  width: 50vw;
+  height: 50vh;
 }
 
 

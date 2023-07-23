@@ -21,6 +21,11 @@ export default function ContentEdu() {
       className="content__edu"
     >
       <h2>Education and certification</h2>
+      <div className="edu_wrapper">
+        <div className="edu_wrapper-content">
+          <img src="../img/sertificat-web.jpeg" />
+        </div>
+      </div>
     </motion.div>
   );
 }
