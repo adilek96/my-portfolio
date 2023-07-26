@@ -29,6 +29,9 @@ export default function ContentPortfolio() {
         <SplideSlide className="slide">
           <img src="../img/currencyApp.png" alt="currencyApp" />
         </SplideSlide>
+        <SplideSlide className="slide">
+          <img src="../img/uberWeb.png" alt="uber_lending" />
+        </SplideSlide>
       </Splide>
     </div>
   );
