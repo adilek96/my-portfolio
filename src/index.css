@@ -717,5 +717,19 @@ h2 {
 .content__about p:last-child {
   font-size: 1rem;
 }
+.edu_wrapper-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.edu_wrapper-content p {
+ font-size: 14px;
+}
+.edu_wrapper-content img{
+  width: 40vw;
+  height: 30vh;
+  
+}
 }
 
