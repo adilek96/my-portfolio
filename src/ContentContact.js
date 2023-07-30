@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ContentForm from "./ContentForm";
+import FormSendModal from "./FormSendModal";
+import FormSendError from "./FormSendError";
 import { HiMail } from "react-icons/hi";
 import { FaTelegram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function ContentContact() {
-  const [showModal, setShowModal] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [showSuccsess, setShowSuccsess] = useState(false);
+  const [showError, setShowError] = useState(false);
   const icons = [<HiMail />, <FaTelegram />, <FaGithub />, <FaLinkedin />];
   const itemLinksName = [
     "https://ashurovadil96@gmail.com",
@@ -53,7 +57,17 @@ export default function ContentContact() {
         Or leave a message using the{" "}
         <button onClick={handleModal}>contact form</button>
       </p>
-      <ContentForm showModal={showModal} setShowModal={setShowModal} />
+      <ContentForm
+        showModal={showModal}
+        setShowModal={setShowModal}
+        setShowSuccsess={setShowSuccsess}
+        setShowError={setShowError}
+      />
+      <FormSendModal
+        showSuccsess={showSuccsess}
+        setShowSuccsess={setShowSuccsess}
+      />
+      <FormSendError showError={showError} setShowError={setShowError} />
     </motion.div>
   );
 }

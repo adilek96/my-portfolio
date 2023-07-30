@@ -598,20 +598,20 @@ h2 {
   position: fixed;
   top: 10%;
   left: 20%;
-  
-  
   background-color: #FEE140;
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.6) ;
   display: flex;
   flex-direction: column;
+  
 }
+
 button:hover {
   box-shadow: 0px 5px 10px 2px rgba(254, 254, 254, 0.6) insert;
   border-radius: 10px;
   background-color: #060707; 
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0); 
 }
-.content__form-btn-group button {
+.content__form-btn-group button, .sent__modal-succsess button, .sent__modal-error button {
   width: 100px;
   height: 30px;
 }
@@ -641,6 +641,31 @@ button:hover {
 }
 .contact-form .message {
   height: 40px;
+}
+.sent__modal-succsess, .sent__modal-error {
+  width: 30vw;
+  height: 20vh;
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  background-color: #FEE140;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.6) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sent__modal-succsess p {
+  color: #68c13f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.sent__modal-error p {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media(max-width: 1028px) {
@@ -785,6 +810,26 @@ h2 {
   width: 40vw;
   height: 30vh;
   
+}
+.sent__modal-succsess p {
+  color: #68c13f;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+.sent__modal-error p {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+.content__form-btn-group button, .sent__modal-succsess button, .sent__modal-error button {
+  width: 60px;
+  height: 20px;
+  font-size: 0.8rem;
+}
+.content__form h2 {
+  text-align: center;
 }
 }
 
