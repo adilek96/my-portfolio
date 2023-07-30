@@ -2,14 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function ContentAbout() {
-  const pVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-    },
-  };
   const divVariants = {
     hidden: {
       y: -1000,

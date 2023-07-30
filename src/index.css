@@ -587,6 +587,11 @@ h2 {
   height: inherit;
   border-radius: 10px;
 }
+.content__contact button {
+  cursor: pointer;
+  border: none;
+  background-color: #FEE140;
+}
 
 @media(max-width: 1028px) {
   .content__home {

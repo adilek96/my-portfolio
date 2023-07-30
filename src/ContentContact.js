@@ -43,7 +43,9 @@ export default function ContentContact() {
           );
         })}
       </ul>
-      <p>Or leave a message using the contact form:</p>
+      <p>
+        Or leave a message using the <button>contact form</button>
+      </p>
     </motion.div>
   );
 }

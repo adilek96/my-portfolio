@@ -67,7 +67,7 @@ export default function ContentHome() {
         variants={divVariants}
         className="content__home-img"
       >
-        <img src="../img/image.png" />
+        <img src="../img/Image.png" />
       </motion.div>
     </article>
   );
