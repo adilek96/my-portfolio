@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ContentForm from "./ContentForm";
 import { HiMail } from "react-icons/hi";
 import { FaTelegram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function ContentContact() {
+  const [showModal, setShowModal] = useState(0);
   const icons = [<HiMail />, <FaTelegram />, <FaGithub />, <FaLinkedin />];
   const itemLinksName = [
     "https://ashurovadil96@gmail.com",
@@ -21,6 +23,10 @@ export default function ContentContact() {
       y: 0,
       opacity: 1,
     },
+  };
+
+  const handleModal = () => {
+    setShowModal(true);
   };
   return (
     <motion.div
@@ -44,8 +50,10 @@ export default function ContentContact() {
         })}
       </ul>
       <p>
-        Or leave a message using the <button>contact form</button>
+        Or leave a message using the{" "}
+        <button onClick={handleModal}>contact form</button>
       </p>
+      <ContentForm showModal={showModal} setShowModal={setShowModal} />
     </motion.div>
   );
 }
